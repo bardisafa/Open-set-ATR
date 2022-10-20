@@ -32,10 +32,10 @@ def weight_initialization_1(m):
         nn.init.xavier_normal_(m.weight)
         m.bias.data.zero_()
 
-class ResNet_DomainClassifier(nn.Module):
+class ResNet_Classifier(nn.Module):
     
     def __init__(self, input_dim=256):
-        super(ResNet_DomainClassifier, self).__init__()
+        super(ResNet_Classifier, self).__init__()
         self.fc1 = nn.Linear(input_dim, 2)
         self.bn1 =nn.BatchNorm1d(2)
         self.relu1 = nn.ReLU()
