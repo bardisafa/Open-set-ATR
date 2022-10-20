@@ -25,7 +25,7 @@ CLASSES = ['cls_1', 'cls_2', 'cls_3', 'cls_4', 'cls_5', 'cls_6', 'cls_unknw']
 def args_parser():
     parser = argparse.ArgumentParser()
     # federated arguments
-    parser.add_argument('--epochs', type=int, default=5, help="rounds of training")
+    parser.add_argument('--epochs', type=int, default=20, help="rounds of training")
     parser.add_argument('--bs', type=int, default=64, help="test batch size")
     parser.add_argument('--lr', type=float, default=0.001, help="learning rate")
     parser.add_argument('--dataset', type=str, default='atr_visible', help="name of dataset")
